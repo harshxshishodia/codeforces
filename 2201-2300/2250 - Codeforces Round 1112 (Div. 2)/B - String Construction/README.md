@@ -8,16 +8,76 @@
 
 ## Problem Statement
 
-Construct a binary string of length `n` whose counts of zeroes and ones differ
-by at most one, while exactly `k` adjacent pairs contain equal characters.
-Report when no such string can be built.
+You are given two integers `n` and `k`.
+
+Construct a binary string `s` of length `n` such that both of the following
+conditions hold:
+
+- The absolute difference between the number of characters `0` and the number
+  of characters `1` in `s` is at most `1`.
+- There are exactly `k` pairs of adjacent equal characters in `s`. Formally,
+  there are exactly `k` indices `i` (`1 <= i <= n - 1`) satisfying
+  `s_i = s_{i+1}`.
+
+Or determine that no such string exists.
+
+A binary string is a string where each character is either `0` or `1`.
 
 ## Input
 
-The first line contains `t` test cases. Each case contains `n` and `k`, with
-`2 <= n <= 2 * 10^5` and `0 <= k < n`. The total `n` is at most `2 * 10^5`.
+Each test contains multiple test cases. The first line contains the number of
+test cases `t` (`1 <= t <= 1000`). The description of the test cases follows.
+
+The only line of each test case contains two integers `n` and `k`
+(`2 <= n <= 2 * 10^5`, `0 <= k <= n - 1`).
+
+It is guaranteed that the sum of `n` over all test cases does not exceed
+`2 * 10^5`.
 
 ## Output
 
-Print any valid string for each test case, or `-1` if construction is
-impossible.
+For each test case, output a binary string `s` of length `n`, the string you
+constructed. Print `-1` if such a string does not exist.
+
+If there are multiple answers, you may output any of them.
+
+## Example
+
+### Input
+
+```text
+8
+5 2
+4 3
+6 1
+5 0
+7 3
+4 2
+3 2
+7 4
+```
+
+### Output
+
+```text
+01110
+-1
+101001
+01010
+0100011
+0011
+-1
+0111000
+```
+
+## Note
+
+In the first test case, one possible answer is `s = 01110`. It contains three
+characters `1` and two characters `0`, and there are exactly `2` adjacent
+equal pairs in `s`: `(s_2, s_3)` and `(s_3, s_4)`.
+
+In the second test case, `k = n - 1`. All characters in `s` should be equal,
+so the numbers of characters `0` and `1` could not differ by at most `1`.
+Thus, the answer is `-1`.
+
+In the third test case, note that `010110` is also a possible answer.

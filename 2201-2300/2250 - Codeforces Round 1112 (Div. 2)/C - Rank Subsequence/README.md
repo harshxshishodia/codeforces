@@ -8,17 +8,106 @@
 
 ## Problem Statement
 
-Delete any elements from a line to form a subsequence. An element kept at
-position `j` in a subsequence of length `m` is valid only when its left rank
-`j` avoids one forbidden interval and its right rank `m-j+1` avoids another.
-Find the maximum possible length of a subsequence in which every element is
-valid.
+You are given `n` elements arranged in a line, numbered `1, 2, ..., n` from
+left to right.
+
+You may delete any number of elements (possibly none). The remaining elements
+form a subsequence and keep their relative order. Let the length of this
+subsequence be `m`. If the element with original index `i` becomes the `j`-th
+element of the subsequence (`1 <= j <= m`), define:
+
+- its left rank as `j`;
+- its right rank as `m - j + 1`.
+
+For each element, you are given two integer segments `[l_i, r_i]` and
+`[u_i, v_i]`. The `i`-th element is valid in a subsequence of length `m` if and
+only if, when it occupies position `j` in that subsequence, both of the
+following hold:
+
+- Its left rank is not in the range `[l_i, r_i]`
+  (that is, `j` is not in `[l_i, r_i]`).
+- Its right rank is not in the range `[u_i, v_i]`
+  (that is, `m - j + 1` is not in `[u_i, v_i]`).
+
+A subsequence is valid if every element remaining in it is valid.
+
+Find the maximum possible length of a valid subsequence. The answer may be `0`.
 
 ## Input
 
-The first line contains `t` test cases. Each case gives `n`, followed by `n`
-rows containing the four interval endpoints. The sum of `n` is at most `5000`.
+Each test contains multiple test cases. The first line contains the number of
+test cases `t` (`1 <= t <= 5000`). The description of the test cases follows.
+
+The first line of each test case contains a single integer `n`
+(`1 <= n <= 5000`), the number of elements.
+
+Then `n` lines follow, the `i`-th line containing the four integers `l_i`,
+`r_i`, `u_i`, and `v_i`
+(`1 <= i <= n`, `1 <= l_i <= r_i <= n`, `1 <= u_i <= v_i <= n`).
+
+It is guaranteed that the sum of `n` over all test cases does not exceed
+`5000`.
 
 ## Output
 
-Print the maximum valid subsequence length for each test case.
+For each test case, print one integer, the maximum possible length of a valid
+subsequence.
+
+## Example
+
+### Input
+
+```text
+5
+1
+1 1 1 1
+4
+2 2 2 2
+1 1 1 1
+1 1 1 1
+1 1 2 2
+5
+1 1 3 3
+2 2 2 2
+3 3 1 1
+1 5 1 5
+5 5 5 5
+2
+2 2 1 1
+1 1 2 2
+6
+1 1 6 6
+1 2 5 6
+2 3 4 5
+3 4 3 4
+4 5 2 3
+5 6 1 2
+```
+
+### Output
+
+```text
+0
+4
+3
+2
+3
+```
+
+## Note
+
+In the first test case, the only element cannot form a valid subsequence of
+length `1`, so the answer is `0`.
+
+In the second test case, all `4` elements can be kept. Their pairs of left and
+right ranks are `(1, 4)`, `(2, 3)`, `(3, 2)`, and `(4, 1)`, respectively, and
+all of them are valid.
+
+In the third test case, one optimal choice is to keep the elements with
+original indices `2`, `3`, and `5`.
+
+In the fourth test case, keeping both elements yields a valid subsequence of
+length `2`. Note that no valid subsequence of length `1` exists.
+
+In the fifth test case, one optimal choice is to keep the elements with
+original indices `3`, `4`, and `5`.

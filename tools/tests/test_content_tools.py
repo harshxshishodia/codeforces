@@ -55,6 +55,17 @@ class CodeforcesContentToolsTest(unittest.TestCase):
         self.assertEqual([1], [contest.contest_id for contest in contests])
         self.assertEqual(["1-A"], [problem.key for problem in contests[0].problems])
 
+    def test_validator_accepts_readme_with_utf8_bom(self) -> None:
+        (self.problem / "README.md").write_text(
+            "\ufeff" + README,
+            encoding="utf-8",
+        )
+
+        contests, errors = validate(self.root)
+
+        self.assertEqual([], errors)
+        self.assertEqual(["1-A"], [problem.key for problem in contests[0].problems])
+
     def test_builder_packages_arbitrary_approaches_and_images(self) -> None:
         image = self.problem / "images" / "sample.png"
         image.parent.mkdir()

@@ -243,7 +243,7 @@ class Validation:
             self.error(path, "required file is empty")
             return None
         try:
-            return data.decode("utf-8")
+            return data.decode("utf-8-sig")
         except UnicodeDecodeError as error:
             self.error(path, f"unsupported encoding; expected UTF-8: {error}")
             return None

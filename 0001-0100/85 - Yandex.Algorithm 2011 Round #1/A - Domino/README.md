@@ -1,0 +1,34 @@
+﻿# A. Domino
+
+**Submission:** https://codeforces.com/contest/85/problem/A
+
+**Limits:** 1 second / 256 megabytes
+
+## Problem Statement
+
+We all know the problem about the number of ways one can tile a 2ΓÇë├ùΓÇë n field by 1ΓÇë├ùΓÇë2 dominoes. You probably remember that it goes down to Fibonacci numbers. We will talk about some other problem below, there you also are going to deal with tiling a rectangular field with dominoes.
+
+You are given a 4ΓÇë├ùΓÇë n rectangular field, that is the field that contains four lines and n columns. You have to find for it any tiling by 1ΓÇë├ùΓÇë2 dominoes such that each of the n ΓÇë-ΓÇë1 potential vertical cuts along the grid lines intersects at least one domino, splitting it in two. No two dominoes in the sought tiling should overlap, each square of the field should be covered by exactly one domino. It is allowed to rotate the dominoes, that is, you can use 2ΓÇë├ùΓÇë1 as well as 1ΓÇë├ùΓÇë2 dominoes.
+
+Write a program that finds an arbitrary sought tiling.
+
+## Input
+
+The input contains one positive integer n ( 1ΓÇëΓëñΓÇë n ΓÇëΓëñΓÇë100 ) ΓÇö the number of the field's columns.
+
+## Output
+
+If there's no solution, print "-1" (without the quotes). Otherwise, print four lines containing n characters each ΓÇö that's the description of tiling, where each vertical cut intersects at least one domino. You should print the tiling, having painted the field in no more than 26 colors. Each domino should be painted a color. Different dominoes can be painted the same color, but dominoes of the same color should not be side-neighbouring. To indicate colors you should use lowercase Latin letters. Print any of the acceptable ways of tiling.
+
+## Examples
+
+Example 1:
+```
+4
+```
+```
+yyzz
+bccd
+bxxd
+yyaa
+```

@@ -1,0 +1,34 @@
+﻿# D. Journey
+
+**Submission:** https://codeforces.com/contest/43/problem/D
+
+**Limits:** 2 seconds / 256 megabytes
+
+## Problem Statement
+
+The territory of Berland is represented by a rectangular field n ΓÇë├ùΓÇë m in size. The king of Berland lives in the capital, located on the upper left square (1,ΓÇë1) . The lower right square has coordinates ( n ,ΓÇë m ) . One day the king decided to travel through the whole country and return back to the capital, having visited every square (except the capital) exactly one time. The king must visit the capital exactly two times, at the very beginning and at the very end of his journey. The king can only move to the side-neighboring squares. However, the royal advise said that the King possibly will not be able to do it. But there is a way out ΓÇö one can build the system of one way teleporters between some squares so that the king could fulfill his plan. No more than one teleporter can be installed on one square, every teleporter can be used any number of times, however every time it is used, it transports to the same given for any single teleporter square. When the king reaches a square with an installed teleporter he chooses himself whether he is or is not going to use the teleport. What minimum number of teleporters should be installed for the king to complete the journey? You should also compose the journey path route for the king.
+
+## Input
+
+The first line contains two space-separated integers n and m ( 1ΓÇëΓëñΓÇë n ,ΓÇë m ΓÇëΓëñΓÇë100,ΓÇë2ΓÇëΓëñΓÇë n ┬╖ m ) ΓÇö the field size. The upper left square has coordinates (1,ΓÇë1) , and the lower right square has coordinates of ( n ,ΓÇë m ) .
+
+## Output
+
+On the first line output integer k ΓÇö the minimum number of teleporters. Then output k lines each containing 4 integers x 1 y 1 x 2 y 2 ( 1ΓÇëΓëñΓÇë x 1 ,ΓÇë x 2 ΓÇëΓëñΓÇë n ,ΓÇë1ΓÇëΓëñΓÇë y 1 ,ΓÇë y 2 ΓÇëΓëñΓÇë m ) ΓÇö the coordinates of the square where the teleporter is installed ( x 1 ,ΓÇë y 1 ), and the coordinates of the square where the teleporter leads ( x 2 ,ΓÇë y 2 ).
+
+Then print nm ΓÇë+ΓÇë1 lines containing 2 numbers each ΓÇö the coordinates of the squares in the order in which they are visited by the king. The travel path must start and end at (1,ΓÇë1) . The king can move to side-neighboring squares and to the squares where a teleporter leads. Besides, he also should visit the capital exactly two times and he should visit other squares exactly one time.
+
+## Examples
+
+Example 1:
+```
+2 2
+```
+```
+0
+1 1
+1 2
+2 2
+2 1
+1 1
+```

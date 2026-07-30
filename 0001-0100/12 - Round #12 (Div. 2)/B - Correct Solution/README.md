@@ -1,0 +1,34 @@
+﻿# B. Correct Solution?
+
+**Submission:** https://codeforces.com/contest/12/problem/B
+
+**Limits:** 2 seconds / 256 megabytes
+
+## Problem Statement
+
+One cold winter evening Alice and her older brother Bob was sitting at home near the fireplace and giving each other interesting problems to solve. When it was Alice's turn, she told the number n to Bob and said:
+
+ΓÇöShuffle the digits in this number in order to obtain the smallest possible number without leading zeroes.
+
+ΓÇöNo problem! ΓÇö said Bob and immediately gave her an answer.
+
+Alice said a random number, so she doesn't know whether Bob's answer is correct. Help her to find this out, because impatient brother is waiting for the verdict.
+
+## Input
+
+The first line contains one integer n ( 0ΓÇëΓëñΓÇë n ΓÇëΓëñΓÇë10 9 ) without leading zeroes. The second lines contains one integer m ( 0ΓÇëΓëñΓÇë m ΓÇëΓëñΓÇë10 9 ) ΓÇö Bob's answer, possibly with leading zeroes.
+
+## Output
+
+Print OK if Bob's answer is correct and WRONG_ANSWER otherwise.
+
+## Examples
+
+Example 1:
+```
+3310
+1033
+```
+```
+OK
+```

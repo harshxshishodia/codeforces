@@ -1,0 +1,36 @@
+﻿# D. Tetragon
+
+**Submission:** https://codeforces.com/contest/23/problem/D
+
+**Limits:** 3 seconds / 256 megabytes
+
+## Problem Statement
+
+You're given the centers of three equal sides of a strictly convex tetragon. Your task is to restore the initial tetragon.
+
+## Input
+
+The first input line contains one number T ΓÇö amount of tests ( 1ΓÇëΓëñΓÇë T ΓÇëΓëñΓÇë5┬╖10 4 ). Each of the following T lines contains numbers x 1 , y 1 , x 2 , y 2 , x 3 , y 3 ΓÇö coordinates of different points that are the centers of three equal sides (non-negative integer numbers, not exceeding 10).
+
+## Output
+
+For each test output two lines. If the required tetragon exists, output in the first line YES , in the second line ΓÇö four pairs of numbers ΓÇö coordinates of the polygon's vertices in clockwise or counter-clockwise order. Don't forget, please, that the tetragon should be strictly convex, i.e. no 3 of its points lie on one line. Output numbers with 9 characters after a decimal point.
+
+If the required tetragon doen't exist, output NO in the first line, and leave the second line empty.
+
+## Examples
+
+Example 1:
+```
+3
+1 1 2 2 3 3
+0 1 1 0 2 2
+9 3 7 9 9 8
+```
+```
+NO
+
+YES
+3.5 1.5 0.5 2.5 -0.5 -0.5 2.5 0.5
+NO
+```

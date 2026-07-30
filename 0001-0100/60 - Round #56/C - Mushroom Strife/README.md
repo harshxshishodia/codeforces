@@ -1,0 +1,30 @@
+﻿# C. Mushroom Strife
+
+**Submission:** https://codeforces.com/contest/60/problem/C
+
+**Limits:** 2 seconds / 256 megabytes
+
+## Problem Statement
+
+Pasha and Akim were making a forest map ΓÇö the lawns were the graph's vertexes and the roads joining the lawns were its edges. They decided to encode the number of laughy mushrooms on every lawn in the following way: on every edge between two lawns they wrote two numbers, the greatest common divisor (GCD) and the least common multiple (LCM) of the number of mushrooms on these lawns. But one day Pasha and Akim had an argument about the laughy mushrooms and tore the map. Pasha was left with just some part of it, containing only m roads. Your task is to help Pasha ΓÇö use the map he has to restore the number of mushrooms on every lawn. As the result is not necessarily unique, help Pasha to restore any one or report that such arrangement of mushrooms does not exist. It is guaranteed that the numbers on the roads on the initial map were no less that 1 and did not exceed 10 6 .
+
+## Input
+
+The first line contains two numbers n and m ( ) which are the numbers of lawns and roads we know about. Each of the following m lines contains four numbers which are the numbers of lawns the road connects, the GCD and the LCM of the numbers of mushrooms on these lawns ( 1ΓÇëΓëñΓÇë GCD ,ΓÇë LCM ΓÇëΓëñΓÇë10 6 ).
+
+It is guaranteed, that no road connects lawn to itself, and no two lawns are connected by more than one road.
+
+## Output
+
+The answer should contain " YES " or " NO " on the first line, saying whether it is possible or not to perform the arrangement. If the answer is " YES ", print on the following line n numbers which are the numbers of mushrooms on the corresponding lawns.
+
+## Examples
+
+Example 1:
+```
+1 0
+```
+```
+YES
+1
+```

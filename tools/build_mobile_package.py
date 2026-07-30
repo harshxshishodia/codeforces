@@ -151,7 +151,7 @@ def build_content(
     seed_root: Path,
     problem: Problem,
 ) -> tuple[list[dict], list[dict]]:
-    statement = trim_readme_header(problem.readme.read_text(encoding="utf-8"))
+    statement = trim_readme_header(problem.readme.read_text(encoding="utf-8-sig"))
     destination = (
         seed_root
         / "assets"
@@ -237,7 +237,7 @@ def read_approaches(problem: Problem) -> list[dict]:
                 {
                     "language": language,
                     "fileName": source.name,
-                    "code": source.read_text(encoding="utf-8").strip(),
+                    "code": source.read_text(encoding="utf-8-sig").strip(),
                 },
             )
     return [
@@ -262,7 +262,7 @@ def split_limits(value: str) -> tuple[str, str]:
 
 
 def build_problem(root: Path, seed_root: Path, problem: Problem) -> dict:
-    raw = problem.readme.read_text(encoding="utf-8")
+    raw = problem.readme.read_text(encoding="utf-8-sig")
     tags_value = metadata(raw, "Tags") or metadata(raw, "Topics")
     tags = [tag.strip().lower() for tag in tags_value.split(",") if tag.strip()]
     time_limit, memory_limit = split_limits(metadata(raw, "Limits"))

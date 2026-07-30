@@ -66,6 +66,38 @@ class CodeforcesContentToolsTest(unittest.TestCase):
         self.assertEqual([], errors)
         self.assertEqual(["1-A"], [problem.key for problem in contests[0].problems])
 
+    def test_builder_strips_utf8_bom_from_markdown_and_solutions(self) -> None:
+        (self.problem / "README.md").write_text(
+            "\ufeff" + README,
+            encoding="utf-8",
+        )
+        approach = self.problem / "Approach 1"
+        approach.mkdir()
+        (approach / "main.cpp").write_text(
+            "\ufeffint main() { return 0; }",
+            encoding="utf-8",
+        )
+        output = self.root / "bom"
+
+        build(
+            self.root,
+            output,
+            "fixed-version",
+            "2026-01-01T00:00:00Z",
+        )
+
+        with zipfile.ZipFile(output / "content-package.zip") as archive:
+            contest = json.loads(
+                archive.read("codeforces_seed/contests/0001.json")
+            )
+            problem = contest["problems"][0]
+            self.assertNotIn("\ufeff", json.dumps(problem))
+            self.assertTrue(problem["contentBlocks"][0]["text"].startswith("##"))
+            self.assertEqual(
+                "int main() { return 0; }",
+                problem["approaches"][0]["solutions"][0]["code"],
+            )
+
     def test_builder_packages_arbitrary_approaches_and_images(self) -> None:
         image = self.problem / "images" / "sample.png"
         image.parent.mkdir()

@@ -34,6 +34,12 @@ Each problem `README.md` uses this metadata before the statement:
 **Tags:** math, implementation
 ```
 
+The statement body supports GitHub-flavored Markdown headings, paragraphs,
+ordered and unordered lists, tables, block quotes, links, inline code, and
+fenced code blocks. Save Markdown and solution files as UTF-8; files with a
+UTF-8 BOM are accepted. Local Markdown or HTML image references are copied into
+the mobile package and rendered in statement order.
+
 `Tags` should use Codeforces topic names. Local Markdown or HTML image references
 are copied into the mobile package. Empty `images/` folders are allowed.
 

@@ -1,0 +1,3 @@
+# D. Prefix Permutation Sums
+
+**Submission:** https://codeforces.com/contest/1851/problem/D

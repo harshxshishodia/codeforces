@@ -1,0 +1,3 @@
+# A. Great Graphs
+
+**Submission:** https://codeforces.com/contest/1540/problem/A

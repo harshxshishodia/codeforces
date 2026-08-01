@@ -1,0 +1,3 @@
+# B1. Rectangular Game
+
+**Submission:** https://codeforces.com/contest/177/problem/B1

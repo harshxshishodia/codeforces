@@ -1,0 +1,3 @@
+# C. Classy Numbers
+
+**Submission:** https://codeforces.com/contest/1036/problem/C

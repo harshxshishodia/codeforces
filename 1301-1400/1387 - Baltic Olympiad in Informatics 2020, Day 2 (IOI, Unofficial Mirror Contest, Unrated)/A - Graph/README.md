@@ -1,0 +1,3 @@
+# A. Graph
+
+**Submission:** https://codeforces.com/contest/1387/problem/A

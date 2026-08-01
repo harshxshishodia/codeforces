@@ -1,0 +1,3 @@
+# C. Tournament
+
+**Submission:** https://codeforces.com/contest/878/problem/C

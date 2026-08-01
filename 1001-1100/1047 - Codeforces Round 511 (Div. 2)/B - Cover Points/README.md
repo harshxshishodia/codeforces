@@ -1,0 +1,3 @@
+# B. Cover Points
+
+**Submission:** https://codeforces.com/contest/1047/problem/B

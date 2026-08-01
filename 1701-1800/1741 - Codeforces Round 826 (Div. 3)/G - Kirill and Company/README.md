@@ -1,0 +1,3 @@
+# G. Kirill and Company
+
+**Submission:** https://codeforces.com/contest/1741/problem/G

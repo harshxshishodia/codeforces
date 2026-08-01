@@ -1,0 +1,3 @@
+# C. Mad MAD Sum
+
+**Submission:** https://codeforces.com/contest/1990/problem/C

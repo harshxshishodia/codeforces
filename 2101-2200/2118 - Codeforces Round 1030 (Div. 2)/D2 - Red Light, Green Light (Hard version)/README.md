@@ -1,0 +1,3 @@
+# D2. Red Light, Green Light (Hard version)
+
+**Submission:** https://codeforces.com/contest/2118/problem/D2

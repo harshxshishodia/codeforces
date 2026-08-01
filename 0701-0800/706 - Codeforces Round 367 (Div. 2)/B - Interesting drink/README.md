@@ -1,0 +1,3 @@
+# B. Interesting drink
+
+**Submission:** https://codeforces.com/contest/706/problem/B

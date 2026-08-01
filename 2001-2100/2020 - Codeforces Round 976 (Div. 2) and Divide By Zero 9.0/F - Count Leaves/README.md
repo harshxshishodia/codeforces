@@ -1,0 +1,3 @@
+# F. Count Leaves
+
+**Submission:** https://codeforces.com/contest/2020/problem/F

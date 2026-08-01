@@ -1,0 +1,3 @@
+# A. Little Nikita
+
+**Submission:** https://codeforces.com/contest/1977/problem/A

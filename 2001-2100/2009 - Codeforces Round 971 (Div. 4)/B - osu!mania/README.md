@@ -1,0 +1,3 @@
+# B. osu!mania
+
+**Submission:** https://codeforces.com/contest/2009/problem/B

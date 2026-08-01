@@ -1,0 +1,3 @@
+# D. Scarecrow
+
+**Submission:** https://codeforces.com/contest/2055/problem/D

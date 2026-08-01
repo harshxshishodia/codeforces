@@ -1,0 +1,3 @@
+# D. The Wu
+
+**Submission:** https://codeforces.com/contest/1017/problem/D

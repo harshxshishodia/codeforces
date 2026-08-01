@@ -1,0 +1,3 @@
+# B. Simple Molecules
+
+**Submission:** https://codeforces.com/contest/344/problem/B

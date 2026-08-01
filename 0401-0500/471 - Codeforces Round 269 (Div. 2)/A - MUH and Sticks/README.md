@@ -1,0 +1,3 @@
+# A. MUH and Sticks
+
+**Submission:** https://codeforces.com/contest/471/problem/A

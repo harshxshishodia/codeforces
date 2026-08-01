@@ -1,0 +1,3 @@
+# A2. Alternating Deck (hard version)
+
+**Submission:** https://codeforces.com/contest/1786/problem/A2

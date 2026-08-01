@@ -1,0 +1,3 @@
+# F. 3SUM
+
+**Submission:** https://codeforces.com/contest/1692/problem/F

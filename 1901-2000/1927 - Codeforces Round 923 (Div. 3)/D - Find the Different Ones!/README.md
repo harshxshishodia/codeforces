@@ -1,0 +1,3 @@
+# D. Find the Different Ones!
+
+**Submission:** https://codeforces.com/contest/1927/problem/D

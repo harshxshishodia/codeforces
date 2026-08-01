@@ -1,0 +1,3 @@
+# D. Lucky Chains
+
+**Submission:** https://codeforces.com/contest/1766/problem/D

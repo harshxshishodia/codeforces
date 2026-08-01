@@ -1,0 +1,3 @@
+# C. News Distribution
+
+**Submission:** https://codeforces.com/contest/1167/problem/C

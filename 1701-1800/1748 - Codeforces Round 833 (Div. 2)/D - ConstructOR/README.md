@@ -1,0 +1,3 @@
+# D. ConstructOR
+
+**Submission:** https://codeforces.com/contest/1748/problem/D

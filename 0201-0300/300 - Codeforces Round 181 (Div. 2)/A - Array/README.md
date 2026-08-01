@@ -1,0 +1,3 @@
+# A. Array
+
+**Submission:** https://codeforces.com/contest/300/problem/A

@@ -1,0 +1,3 @@
+# C. Minimize the Thickness
+
+**Submission:** https://codeforces.com/contest/1741/problem/C

@@ -1,0 +1,3 @@
+# F. Moving Points
+
+**Submission:** https://codeforces.com/contest/1311/problem/F

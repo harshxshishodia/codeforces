@@ -1,0 +1,3 @@
+# B. Balanced Array
+
+**Submission:** https://codeforces.com/contest/1343/problem/B

@@ -1,0 +1,3 @@
+# A. New Password
+
+**Submission:** https://codeforces.com/contest/770/problem/A

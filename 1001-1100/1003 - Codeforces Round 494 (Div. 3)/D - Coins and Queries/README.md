@@ -1,0 +1,3 @@
+# D. Coins and Queries
+
+**Submission:** https://codeforces.com/contest/1003/problem/D

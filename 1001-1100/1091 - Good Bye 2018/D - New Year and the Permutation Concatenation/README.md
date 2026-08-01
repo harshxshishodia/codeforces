@@ -1,0 +1,3 @@
+# D. New Year and the Permutation Concatenation
+
+**Submission:** https://codeforces.com/contest/1091/problem/D

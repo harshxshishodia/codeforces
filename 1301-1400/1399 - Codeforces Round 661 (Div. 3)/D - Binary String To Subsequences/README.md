@@ -1,0 +1,3 @@
+# D. Binary String To Subsequences
+
+**Submission:** https://codeforces.com/contest/1399/problem/D

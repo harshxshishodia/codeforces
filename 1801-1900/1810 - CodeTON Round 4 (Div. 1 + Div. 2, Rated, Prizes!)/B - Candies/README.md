@@ -1,0 +1,3 @@
+# B. Candies
+
+**Submission:** https://codeforces.com/contest/1810/problem/B

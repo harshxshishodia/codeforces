@@ -1,0 +1,3 @@
+# B. ICPC Balloons
+
+**Submission:** https://codeforces.com/contest/1703/problem/B

@@ -1,0 +1,3 @@
+# B. Reach Median
+
+**Submission:** https://codeforces.com/contest/1037/problem/B

@@ -1,0 +1,3 @@
+# B. Monsters
+
+**Submission:** https://codeforces.com/contest/1849/problem/B

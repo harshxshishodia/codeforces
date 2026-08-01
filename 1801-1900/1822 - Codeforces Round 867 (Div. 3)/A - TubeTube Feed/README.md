@@ -1,0 +1,3 @@
+# A. TubeTube Feed
+
+**Submission:** https://codeforces.com/contest/1822/problem/A

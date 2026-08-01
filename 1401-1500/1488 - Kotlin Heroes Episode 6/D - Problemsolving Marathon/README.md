@@ -1,0 +1,3 @@
+# D. Problemsolving Marathon
+
+**Submission:** https://codeforces.com/contest/1488/problem/D

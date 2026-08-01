@@ -1,0 +1,3 @@
+# D. Cutting Out
+
+**Submission:** https://codeforces.com/contest/1077/problem/D

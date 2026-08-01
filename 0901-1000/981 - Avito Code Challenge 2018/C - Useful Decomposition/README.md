@@ -1,0 +1,3 @@
+# C. Useful Decomposition
+
+**Submission:** https://codeforces.com/contest/981/problem/C

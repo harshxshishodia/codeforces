@@ -1,0 +1,3 @@
+# A. Dubstep
+
+**Submission:** https://codeforces.com/contest/208/problem/A

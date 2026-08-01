@@ -1,0 +1,3 @@
+# C. Beautiful XOR
+
+**Submission:** https://codeforces.com/contest/2162/problem/C
